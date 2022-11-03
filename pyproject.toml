@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ipl-web-scrape"
+version = "0.1.0"
+description = ""
+authors = ["victoria.beardow1 <victoria.beardow1@nhs.net>"]
+readme = "README.md"
+packages = [{include = "ipl_web_scrape"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
