@@ -4,13 +4,13 @@ setup:
 	poetry shell
 
 run:
-	poetry run python blackjack/game.py
+	# poetry run python TODO.py
 
 test:
 	poetry run pytest
 
 test-cov:
-	pytest --cov=blackjack tests
+	#TODO
 
 clean:
 	rm -rf __pycache__
