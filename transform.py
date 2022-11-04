@@ -7,13 +7,13 @@ def transform():
 
     df = pd.read_csv("./data/batting_scores.csv")
 
-    new_df = clean_dataframe(df)
+    cleaned_df = clean_dataframe(df)
+    grouped_df = groupby_player(cleaned_df)
 
-    # print(new_df.head())
+    print(grouped_df)
 
-    grouped_df = groupby_player(new_df)
-
-    print(grouped_df.head())
+    cleaned_df.to_csv("./data/cleaned_batting_scores.csv")
+    grouped_df.to_csv("./data/grouped_batting_scores.csv")
 
 
 transform()
