@@ -1,8 +1,11 @@
 import pytest
 import pandas as pd
 from unittest.mock import patch
-from ipl_web_scrape.extract_actions import get_links, get_batting_scorecard
-from ipl_web_scrape.driver import setup_driver
+from ipl_web_scrape.extract_actions import (
+    setup_driver,
+    get_links,
+    get_batting_scorecard,
+)
 from ipl_web_scrape.base_page import BasePage
 
 
