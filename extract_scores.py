@@ -1,6 +1,5 @@
-from ipl_web_scrape.pickle_actions import pickle_dump, pickle_load
-from ipl_web_scrape.driver import setup_driver
-from ipl_web_scrape.extract_actions import get_matches, get_batting_scorecard
+from ipl_web_scrape.pickle_actions import pickle_load
+from ipl_web_scrape.extract_actions import get_batting_scorecard
 
 # Unload links from pickle
 pick_path = "C:\\temp\\perf_data.pkl"
