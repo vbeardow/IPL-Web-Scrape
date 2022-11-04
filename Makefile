@@ -4,7 +4,7 @@ setup:
 	poetry shell
 
 run:
-	# poetry run python TODO.py
+	poetry run python ipl_web_scrape/main.py
 
 test:
 	poetry run pytest
