@@ -4,7 +4,13 @@ setup:
 	poetry shell
 
 run:
-	# poetry run python TODO.py
+	poetry run python extract.py
+
+links:
+	poetry run python extract_links.py
+
+scores:
+	poetry run python extract_scores.py
 
 test:
 	poetry run pytest
