@@ -18,11 +18,15 @@ def extract():
     link_text = "indian-premier-league"
     links = get_links(browser, locator, link_text)
 
+    # Loop through games and append each table to list_tables
     list_tables = []
     for link in links:
         list_tables.append(get_batting_scorecard(link))
 
+    # Flatten list of tables
     flat_list_tables = list(itertools.chain(*list_tables))
+
+    # Concat into one dataframe
     batting_scores = pd.concat(flat_list_tables)
 
     browser.quit()
