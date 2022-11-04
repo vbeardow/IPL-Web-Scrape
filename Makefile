@@ -3,14 +3,11 @@ setup:
 	pre-commit install
 	poetry shell
 
-run:
+extract:
 	poetry run python extract.py
 
-links:
-	poetry run python extract_links.py
-
-scores:
-	poetry run python extract_scores.py
+transform:
+	poetry run python transform.py
 
 test:
 	poetry run pytest
