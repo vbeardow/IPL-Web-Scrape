@@ -1,4 +1,5 @@
 import pytest
+import pandas as pd
 from unittest.mock import patch
 from ipl_web_scrape.extract_actions import get_matches, get_batting_scorecard
 from ipl_web_scrape.driver import setup_driver
@@ -52,6 +53,18 @@ def test_get_matches_link_text_error(browser: BasePage):
         get_matches(browser, selector, link_text)
 
 
-def get_batting_scorecard_from_link(match_link: str):
+def test_get_batting_scorecard_from_link(match_link: str):
     tables = get_batting_scorecard(match_link)
     assert len(tables) == 2
+
+
+def test_get_batting_scorecard_return_type(match_link: str):
+    tables = get_batting_scorecard(match_link)
+    assert isinstance(tables[0], pd.DataFrame)
+    assert isinstance(tables[1], pd.DataFrame)
+
+
+def test_get_batting_scorecard_invalid_link():
+    link = "test_invalid_link"
+    with pytest.raises(Exception, match=f"Could not read html with link {link}"):
+        get_batting_scorecard(link)

@@ -29,6 +29,10 @@ def get_matches(browser: BasePage, selector: str, link_text: str):
 
 
 def get_batting_scorecard(link: str):
-    tables = pd.read_html(link)
+
+    try:
+        tables = pd.read_html(link)
+    except:
+        raise Exception(f"Could not read html with link {link}")
 
     return [tables[0], tables[2]]
