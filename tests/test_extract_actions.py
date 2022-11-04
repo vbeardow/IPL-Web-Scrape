@@ -58,6 +58,12 @@ def test_get_batting_scorecard_from_link(match_link: str):
     assert len(tables) == 2
 
 
+def test_get_batting_scorecard_dataframe_size(match_link: str):
+    tables = get_batting_scorecard(match_link)
+    assert len(tables[0].columns) == 10
+    assert len(tables[1].columns) == 10
+
+
 def test_get_batting_scorecard_return_type(match_link: str):
     tables = get_batting_scorecard(match_link)
     assert isinstance(tables[0], pd.DataFrame)
