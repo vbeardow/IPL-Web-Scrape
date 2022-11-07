@@ -1,5 +1,4 @@
 from ipl_web_scrape.load_actions import SQLite
-from ipl_web_scrape.transform_actions import update_types
 import pandas as pd
 
 

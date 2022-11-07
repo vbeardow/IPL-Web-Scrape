@@ -10,12 +10,6 @@ def transform():
     cleaned_df = clean_dataframe(df)
     grouped_df = groupby_player(cleaned_df)
 
-    # print(cleaned_df.loc[cleaned_df['Batsman'] == 'Maheesh Theekshana'])
-    # print(grouped_df.loc[grouped_df['Batsman'] == 'Maheesh Theekshana'])
-
-    # print(grouped_df['Sixes'].unique())
-    print(grouped_df.info())
-
     cleaned_df.to_csv("./data/cleaned_batting_scores.csv")
     grouped_df.to_csv("./data/grouped_batting_scores.csv", index=False)
 
