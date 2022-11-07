@@ -9,6 +9,9 @@ extract:
 transform:
 	poetry run python transform.py
 
+load:
+	poetry run python load.py
+
 test:
 	poetry run pytest
 
