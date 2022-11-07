@@ -6,12 +6,13 @@ from ipl_web_scrape.extract_actions import (
     get_links,
     get_batting_scorecard,
 )
-from ipl_web_scrape.base_page import BasePage
+from ipl_web_scrape.base_page import BasePage, MatchSchedulePage
 
 
 @pytest.fixture
 def browser():
-    return setup_driver()
+    page = MatchSchedulePage()
+    return setup_driver(page)
 
 
 @pytest.fixture
@@ -27,8 +28,8 @@ def test_get_links_not_zero(browser: BasePage):
 
 
 def test_get_links_driver_error(browser: BasePage):
-    browser.driver = "x"
-    selector = "test_selector"
+    browser.driver = "driver"
+    selector = "a[class='ds-no-tap-higlight']"
     link_text = "indian-premier-league"
     with pytest.raises(
         Exception,
