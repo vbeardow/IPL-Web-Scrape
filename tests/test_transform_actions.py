@@ -4,6 +4,7 @@ from ipl_web_scrape.transform_actions import (
     drop_null_rows,
     drop_named_rows,
     drop_unnamed_cols,
+    drop_named_columns,
     rename_cols,
     out_column,
 )
@@ -26,6 +27,7 @@ def raw_dataframe():
         "M": [0, 2, None, 1, 0, 0],
         "4s": [1, 3, None, 1, 2, 3],
         "6s": [1, 0, None, 1, 1, 0],
+        "SR": [1.0, 1.0, None, 2.3, 2.4, 5.4],
     }
     df = pd.DataFrame(data)
     return df
@@ -45,7 +47,6 @@ def renamed_df():
         "Status": ["out", "not out", None, "out", "not out", "out"],
         "Runs": [30, 45, None, 20, 18, 12],
         "Balls": [4, 16, None, 1, 10, 11],
-        "Maidens": [0, 2, None, 1, 0, 0],
         "Fours": [1, 3, None, 1, 2, 3],
         "Sixes": [1, 0, None, 1, 1, 0],
     }
@@ -66,18 +67,23 @@ def test_drop_named_rows(renamed_df: pd.DataFrame):
     )
 
 
-def test_drop_cols(raw_dataframe: pd.DataFrame):
+def test_drop_unnamed_cols(raw_dataframe: pd.DataFrame):
     df = drop_unnamed_cols(raw_dataframe)
     unnamed_columns = [col for col in df.columns if "Unnamed" in col]
     assert len(unnamed_columns) == 0
 
 
+def test_drop_named_cols(raw_dataframe: pd.DataFrame):
+    df = drop_named_columns(raw_dataframe)
+    assert ("M|SR" in df.columns) == False
+
+
 def test_rename_cols(raw_dataframe: pd.DataFrame):
     df = rename_cols(raw_dataframe)
-    column_names = ["Batsman", "Status", "Runs", "Balls", "Maidens", "Fours", "Sixes"]
+    column_names = ["Batsman", "Status", "Runs", "Balls", "M", "Fours", "Sixes", "SR"]
     assert df.columns.to_list() == column_names
 
 
-def test_out_columns(renamed_df: pd.DataFrame):
+def test_out_column(renamed_df: pd.DataFrame):
     df = out_column(renamed_df)
     assert df["Out"].to_list() == [True, False, True, True, False, True]
