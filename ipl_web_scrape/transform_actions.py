@@ -17,7 +17,7 @@ def drop_null_rows(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def drop_other_rows(df: pd.DataFrame) -> pd.DataFrame:
+def drop_named_rows(df: pd.DataFrame) -> pd.DataFrame:
     """Drop rows where column contains string specified
 
     Args:
@@ -85,7 +85,7 @@ def out_column(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         pd.DataFrame: pandas dataframe with additional Out column
     """
-    df["Out"] = df["Status"].str.contains("not out")
+    df["Out"] = ~df["Status"].str.contains("not out", na=False)
 
     return df
 
@@ -121,7 +121,7 @@ def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     df = rename_cols(df)
     df = drop_unnamed_cols(df)
     df = drop_null_rows(df)
-    df = drop_other_rows(df)
+    df = drop_named_rows(df)
     df = out_column(df)
 
     return df
