@@ -43,20 +43,19 @@ def get_links(browser: BasePage, selector: str, link_text: str) -> List[str]:
         raise Exception(
             f"Could not apply the function find_elements to your driver. Check your driver."
         )
-
-    if len(elems) == 0:
-        raise Exception(f"Could not find any elements with selector {selector}")
     else:
-        links = [
-            elem.get_attribute("href")
-            for elem in elems
-            if link_text in elem.get_attribute("href")
-        ]
-
-    if len(links) == 0:
-        raise Exception(
-            f"Could not find any elements with href attribute containing {link_text}"
-        )
+        if len(elems) == 0:
+            raise Exception(f"Could not find any elements with selector {selector}")
+        else:
+            links = [
+                elem.get_attribute("href")
+                for elem in elems
+                if link_text in elem.get_attribute("href")
+            ]
+            if len(links) == 0:
+                raise Exception(
+                    f"Could not find any elements with href attribute containing {link_text}"
+                )
 
     return links
 
