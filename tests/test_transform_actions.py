@@ -8,6 +8,7 @@ from ipl_web_scrape.transform_actions import (
     clean_batsman_names,
     rename_cols,
     out_column,
+    groupby_player,
 )
 
 
@@ -55,6 +56,21 @@ def renamed_df():
     return df
 
 
+@pytest.fixture
+def cleaned_df():
+    data = {
+        "Batsman": ["Player 1", "Player 1"],
+        "Status": ["out", "not out"],
+        "Runs": [4, 5],
+        "Balls": [2, 3],
+        "Fours": [1, 2],
+        "Sixes": [0, 3],
+        "Out": [True, False],
+    }
+    df = pd.DataFrame(data)
+    return df
+
+
 def test_drop_null_rows(raw_dataframe: pd.DataFrame):
     df = drop_null_rows(raw_dataframe)
     assert df.isnull().all(axis=1).sum() == 0
@@ -85,12 +101,17 @@ def test_rename_cols(raw_dataframe: pd.DataFrame):
     assert df.columns.to_list() == column_names
 
 
-def test_clean_batsman(renamed_df: pd.DataFrame):
+def test_clean_batsman_names(renamed_df: pd.DataFrame):
     df = clean_batsman_names(renamed_df)
-    print(df["Batsman"].head())
-    assert df["Batsman"].str.contains("(c) |†").any() == False
+    assert df["Batsman"].str.findall("(c) |†").any() == False
 
 
 def test_out_column(renamed_df: pd.DataFrame):
     df = out_column(renamed_df)
     assert df["Out"].to_list() == [True, False, True, True, False, True]
+
+
+def test_groupby_player(cleaned_df: pd.DataFrame):
+    df = groupby_player(cleaned_df)
+    print(df)
+    assert df.iloc[0].to_list() == ["Player 1", 9, 5, 3, 3, 1]
