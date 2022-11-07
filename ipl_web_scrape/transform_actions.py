@@ -90,6 +90,11 @@ def rename_cols(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def clean_batsman_names(df: pd.DataFrame) -> pd.DataFrame:
+    df["Batsman"] = df["Batsman"].str.strip("(c) |†")
+    return df
+
+
 def out_column(df: pd.DataFrame) -> pd.DataFrame:
     """Create column on dataframe with name Out, which is a boolean value representing if the player is out (True) or in (False)
 
@@ -153,6 +158,7 @@ def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     df = drop_named_columns(df)
     df = drop_null_rows(df)
     df = drop_named_rows(df)
+    df = clean_batsman_names(df)
     df = out_column(df)
     df = update_types(df)
 

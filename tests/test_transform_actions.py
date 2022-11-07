@@ -5,6 +5,7 @@ from ipl_web_scrape.transform_actions import (
     drop_named_rows,
     drop_unnamed_cols,
     drop_named_columns,
+    clean_batsman_names,
     rename_cols,
     out_column,
 )
@@ -14,7 +15,7 @@ from ipl_web_scrape.transform_actions import (
 def raw_dataframe():
     data = {
         "BATTING": [
-            "Player 1",
+            "Player 1 (c) †",
             "Extras",
             None,
             "TOTAL",
@@ -37,8 +38,8 @@ def raw_dataframe():
 def renamed_df():
     data = {
         "Batsman": [
-            "Player 1",
-            "Extras",
+            "Player 1 (c) †",
+            "Extras (c)",
             None,
             "TOTAL",
             "Did not bat",
@@ -82,6 +83,12 @@ def test_rename_cols(raw_dataframe: pd.DataFrame):
     df = rename_cols(raw_dataframe)
     column_names = ["Batsman", "Status", "Runs", "Balls", "M", "Fours", "Sixes", "SR"]
     assert df.columns.to_list() == column_names
+
+
+def test_clean_batsman(renamed_df: pd.DataFrame):
+    df = clean_batsman_names(renamed_df)
+    print(df["Batsman"].head())
+    assert df["Batsman"].str.contains("(c) |†").any() == False
 
 
 def test_out_column(renamed_df: pd.DataFrame):
