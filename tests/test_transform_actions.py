@@ -113,5 +113,4 @@ def test_out_column(renamed_df: pd.DataFrame):
 
 def test_groupby_player(cleaned_df: pd.DataFrame):
     df = groupby_player(cleaned_df)
-    print(df)
     assert df.iloc[0].to_list() == ["Player 1", 9, 5, 3, 3, 1]

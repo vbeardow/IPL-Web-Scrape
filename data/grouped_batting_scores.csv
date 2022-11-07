@@ -1,184 +1,175 @@
-,Batsman,Runs,Balls,Fours,Sixes,Out
-0,Aaron Finch,86,61,10,3,5
-1,Abdul Samad,4,7,0,0,2
-2,Abhijeet Tomar,4,8,1,0,1
-3,Abhinav Manohar,108,75,14,3,6
-4,Abhishek Sharma,426,320,47,13,14
-5,Aiden Markram,381,274,25,19,8
-6,Ajinkya Rahane,133,128,14,4,7
-7,Akash Deep,0,2,0,0,1
-8,Alzarri Joseph,5,7,0,0,1
-9,Aman Hakim Khan,5,3,1,0,1
-10,Ambati Rayudu,274,224,25,15,11
-11,Andre Russell,335,192,18,32,9
-12,Anmolpreet Singh,13,13,1,0,2
-13,Anrich Nortje,1,6,0,0,0
-14,Anuj Rawat,129,118,10,7,8
-15,Anukul Roy,0,2,0,0,1
-16,Arshdeep Singh,21,29,3,0,3
-17,Avesh Khan,22,13,0,3,1
-18,Axar Patel,182,120,12,10,4
-19,Ayush Badoni,161,130,11,7,8
-20,Baba Indrajith ,21,30,2,0,3
-21,Bhanuka Rajapaksa,132,98,11,6,7
-22,Bhanuka Rajapaksa ,74,31,5,7,2
-23,Bhuvneshwar Kumar,23,25,3,0,2
-24,Bhuvneshwar Kumar ,1,1,0,0,1
-25,Chris Jordan,11,8,0,0,1
-26,Daniel Sams,38,36,1,3,7
-27,Daryl Mitchell,33,44,1,0,2
-28,David Miller,481,337,32,23,7
-29,David Warner,432,287,52,15,9
-30,David Willey,18,30,3,0,2
-31,Deepak Hooda,451,330,36,18,14
-32,Devdutt Padikkal,376,306,40,14,17
-33,Devon Conway,252,173,22,12,6
-34,Dewald Brevis,161,113,14,11,7
-35,Dinesh Karthik ,330,180,27,22,6
-36,Dushmantha Chameera,43,28,3,3,4
-37,Dwaine Pretorius,44,28,3,3,4
-38,Dwayne Bravo,23,24,1,1,2
-39,Evin Lewis,73,56,8,3,3
-40,Fabian Allen,8,7,1,0,1
-41,Faf du Plessis ,468,367,49,13,15
-42,Fazalhaq Farooqi,2,8,0,0,0
-43,Glenn Maxwell,301,178,31,15,11
-44,Hardik Pandya ,487,371,49,12,11
-45,Harpreet Brar,22,25,1,2,3
-46,Harshal Patel,43,39,4,2,5
-47,Harshit Rana,2,2,0,0,1
-48,Hrithik Shokeen,43,48,5,0,2
-49,Ishan Kishan ,418,348,45,11,13
-50,Jagadeesha Suchith,2,8,0,0,2
-51,James Neesham,31,27,3,0,2
-52,Jason Holder,58,44,2,6,6
-53,Jasprit Bumrah,0,8,0,0,2
-54,Jaydev Unadkat,59,37,4,3,3
-55,Jitesh Sharma,23,11,1,2,1
-56,Jitesh Sharma ,211,132,21,10,7
-57,Jonny Bairstow,245,167,32,9,10
-58,Jonny Bairstow ,8,8,2,0,1
-59,Jos Buttler,863,579,83,45,15
-60,Josh Hazlewood,18,26,1,0,0
-61,KL Rahul ,616,455,45,30,12
-62,Kagiso Rabada,48,43,5,2,5
-63,Kane Williamson ,216,231,16,8,11
-64,Karan Sharma,4,4,1,0,1
-65,Kartik Tyagi,7,6,1,0,2
-66,Karun Nair,16,18,1,0,2
-67,Khaleel Ahmed,0,2,0,0,2
-68,Kieron Pollard,144,134,6,9,10
-69,Krishnappa Gowtham,0,1,0,0,1
-70,Krunal Pandya,183,145,16,4,9
-71,Kuldeep Sen,0,3,0,0,0
-72,Kuldeep Yadav,48,52,3,2,1
-73,Kumar Kartikeya,3,5,0,0,1
-74,Lalit Yadav,161,146,11,7,7
-75,Liam Livingstone,437,240,29,34,12
-76,Lockie Ferguson,5,4,1,0,2
-77,M Shahrukh Khan,117,108,4,9,7
-78,MS Dhoni ,232,188,21,10,7
-79,Maheesh Theekshana,7,7,0,1,1
-80,Mahipal Lomror,86,57,7,4,5
-81,Manan Vohra,19,11,1,2,1
-82,Mandeep Singh,18,23,4,0,3
-83,Manish Pandey,88,80,9,2,6
-84,Marco Jansen,9,7,0,1,1
-85,Marcus Stoinis,156,106,7,13,8
-86,Matthew Wade,89,75,12,2,5
-87,Matthew Wade ,68,63,11,0,5
-88,Mayank Agarwal ,196,160,23,6,12
-89,Mitchell Marsh,251,189,19,14,8
-90,Mitchell Santner,22,27,3,0,2
-91,Moeen Ali,244,177,24,11,10
-92,Mohammed Siraj,30,33,5,0,2
-93,Mohsin Khan,23,16,2,1,1
-94,Mukesh Choudhary,6,6,1,0,1
-95,Murugan Ashwin,12,14,1,1,3
-96,Mustafizur Rahman,3,5,0,0,0
-97,Narayan Jagadeesan,40,37,3,1,1
-98,Nathan Coulter-Nile,1,2,0,0,0
-99,Nathan Ellis,0,2,0,0,1
-100,Navdeep Saini,2,2,0,0,1
-101,Nicholas Pooran ,306,212,16,21,8
-102,Nitish Rana,361,251,29,22,13
-103,Obed McCoy,8,5,0,1,1
-104,Odean Smith,51,44,1,5,3
-105,Pat Cummins,63,24,5,6,4
-106,Prabhsimran Singh,14,11,2,0,1
-107,Pradeep Sangwan,2,5,0,0,1
-108,Prasidh Krishna,6,12,0,0,1
-109,Prerak Mankad,4,1,1,0,0
-110,Prithvi Shaw,283,185,37,10,10
-111,Priyam Garg,46,33,4,2,2
-112,Quinton de Kock ,508,341,47,23,14
-113,Rahul Chahar,77,68,7,4,6
-114,Rahul Tewatia,217,147,22,9,7
-115,Rahul Tripathi,413,261,40,20,11
-116,Rajat Patidar,333,218,27,18,6
-117,Raj Bawa,11,14,1,0,2
-118,Ramandeep Singh,45,40,3,1,2
-119,Rashid Khan,51,23,1,6,3
-120,Rashid Khan ,40,21,2,3,1
-121,Rasikh Salam,7,6,1,0,1
-122,Rassie van der Dussen,22,24,2,0,2
-123,Ravi Bishnoi,0,1,0,0,0
-124,Ravichandran Ashwin,191,135,14,9,7
-125,Ravindra Jadeja,4,6,0,0,1
-126,Ravindra Jadeja ,112,92,6,5,5
-127,Riley Meredith,0,1,0,0,0
-128,Rinku Singh,174,117,17,7,5
-129,Ripal Patel,6,3,0,1,1
-130,Rishabh Pant ,340,224,35,16,11
-131,Rishi Dhawan,37,40,4,2,2
-132,Riyan Parag,183,132,11,10,11
-133,Robin Uthappa,230,171,19,14,11
-134,Rohit Sharma ,268,223,28,13,14
-135,Romario Shepherd,58,41,2,5,2
-136,Rovman Powell,250,167,10,22,10
-137,Ruturaj Gaikwad,368,291,33,14,14
-138,Sai Sudharsan,145,114,14,3,4
-139,Sam Billings,39,37,1,2,2
-140,Sam Billings ,130,101,8,8,5
-141,Sanjay Yadav,0,2,0,0,1
-142,Sanju Samson ,458,312,43,26,16
-143,Sarfaraz Khan,91,67,9,2,3
-144,Sean Abbott,7,5,0,1,1
-145,Shahbaz Ahmed,219,181,14,9,8
-146,Shardul Thakur,120,87,7,7,8
-147,Shashank Singh,69,47,5,4,4
-148,Sheldon Jackson ,23,26,0,1,4
-149,Sherfane Rutherford,33,50,1,1,2
-150,Shikhar Dhawan,452,364,46,12,11
-151,Shikhar Dhawan ,8,11,1,0,1
-152,Shimron Hetmyer,314,204,21,21,7
-153,Shivam Dube,289,185,22,16,10
-154,Shivam Mavi,3,7,0,0,2
-155,Shreyas Gopal,9,7,2,0,0
-156,Shreyas Iyer ,401,298,41,11,13
-157,Shubman Gill,483,365,51,11,14
-158,Simarjeet Singh,7,8,0,0,1
-159,Srikar Bharat,8,7,2,0,2
-160,Sunil Narine,71,40,6,6,8
-161,Suryakumar Yadav,303,208,23,16,7
-162,Suyash Prabhudessai,67,59,7,2,5
-163,Tilak Varma,397,303,29,16,11
-164,Tim David,186,86,12,16,5
-165,Tim Seifert,24,19,4,0,2
-166,Tim Southee,2,12,0,0,4
-167,Trent Boult,40,29,2,1,2
-168,Tristan Stubbs,2,4,0,0,2
-169,Tymal Mills,0,3,0,0,1
-170,Umesh Yadav,55,40,4,4,4
-171,Umran Malik,4,8,0,0,1
-172,Vaibhav Arora,5,13,0,0,2
-173,Varun Chakravarthy,12,18,2,0,0
-174,Venkatesh Iyer,182,169,17,7,11
-175,Vijay Shankar,19,35,1,0,4
-176,Virat Kohli,341,294,32,8,15
-177,Wanindu Hasaranga de Silva,38,43,4,1,7
-178,Washington Sundar,101,69,9,3,7
-179,Wriddhiman Saha ,317,259,40,7,10
-180,Yash Dayal,0,1,0,0,1
-181,Yashasvi Jaiswal,258,194,28,10,10
-182,Yuzvendra Chahal,5,8,0,0,1
+Batsman,Runs,Balls,Fours,Sixes,Out
+Aaron Finch,86,61,10,3,5
+Abdul Samad,4,7,0,0,2
+Abhijeet Tomar,4,8,1,0,1
+Abhinav Manohar,108,75,14,3,6
+Abhishek Sharma,426,320,47,13,14
+Aiden Markram,381,274,25,19,8
+Ajinkya Rahane,133,128,14,4,7
+Akash Deep,0,2,0,0,1
+Alzarri Joseph,5,7,0,0,1
+Aman Hakim Khan,5,3,1,0,1
+Ambati Rayudu,274,224,25,15,11
+Andre Russell,335,192,18,32,9
+Anmolpreet Singh,13,13,1,0,2
+Anrich Nortje,1,6,0,0,0
+Anuj Rawat,129,118,10,7,8
+Anukul Roy,0,2,0,0,1
+Arshdeep Singh,21,29,3,0,3
+Avesh Khan,22,13,0,3,1
+Axar Patel,182,120,12,10,4
+Ayush Badoni,161,130,11,7,8
+Baba Indrajith,21,30,2,0,3
+Bhanuka Rajapaksa,206,129,16,13,9
+Bhuvneshwar Kumar,24,26,3,0,3
+Chris Jordan,11,8,0,0,1
+Daniel Sams,38,36,1,3,7
+Daryl Mitchell,33,44,1,0,2
+David Miller,481,337,32,23,7
+David Warner,432,287,52,15,9
+David Willey,18,30,3,0,2
+Deepak Hooda,451,330,36,18,14
+Devdutt Padikkal,376,306,40,14,17
+Devon Conway,252,173,22,12,6
+Dewald Brevis,161,113,14,11,7
+Dinesh Karthik,330,180,27,22,6
+Dushmantha Chameera,43,28,3,3,4
+Dwaine Pretorius,44,28,3,3,4
+Dwayne Bravo,23,24,1,1,2
+Evin Lewis,73,56,8,3,3
+Fabian Allen,8,7,1,0,1
+Faf du Plessis,468,367,49,13,15
+Fazalhaq Farooqi,2,8,0,0,0
+Glenn Maxwell,301,178,31,15,11
+Hardik Pandya,487,371,49,12,11
+Harpreet Brar,22,25,1,2,3
+Harshal Patel,43,39,4,2,5
+Harshit Rana,2,2,0,0,1
+Hrithik Shokeen,43,48,5,0,2
+Ishan Kishan,418,348,45,11,13
+Jagadeesha Suchith,2,8,0,0,2
+James Neesham,31,27,3,0,2
+Jason Holder,58,44,2,6,6
+Jasprit Bumrah,0,8,0,0,2
+Jaydev Unadkat,59,37,4,3,3
+Jitesh Sharma,234,143,22,12,8
+Jonny Bairstow,253,175,34,9,11
+Jos Buttler,863,579,83,45,15
+Josh Hazlewood,18,26,1,0,0
+KL Rahul,616,455,45,30,12
+Kagiso Rabada,48,43,5,2,5
+Kane Williamson,216,231,16,8,11
+Karan Sharma,4,4,1,0,1
+Kartik Tyagi,7,6,1,0,2
+Karun Nair,16,18,1,0,2
+Khaleel Ahmed,0,2,0,0,2
+Kieron Pollard,144,134,6,9,10
+Krishnappa Gowtham,0,1,0,0,1
+Krunal Pandya,183,145,16,4,9
+Kuldeep Sen,0,3,0,0,0
+Kuldeep Yadav,48,52,3,2,1
+Kumar Kartikeya,3,5,0,0,1
+Lalit Yadav,161,146,11,7,7
+Liam Livingstone,437,240,29,34,12
+Lockie Ferguson,5,4,1,0,2
+M Shahrukh Khan,117,108,4,9,7
+MS Dhoni,232,188,21,10,7
+Maheesh Theekshana,7,7,0,1,1
+Mahipal Lomror,86,57,7,4,5
+Manan Vohra,19,11,1,2,1
+Mandeep Singh,18,23,4,0,3
+Manish Pandey,88,80,9,2,6
+Marco Jansen,9,7,0,1,1
+Marcus Stoinis,156,106,7,13,8
+Matthew Wade,157,138,23,2,10
+Mayank Agarwal,196,160,23,6,12
+Mitchell Marsh,251,189,19,14,8
+Mitchell Santner,22,27,3,0,2
+Moeen Ali,244,177,24,11,10
+Mohammed Siraj,30,33,5,0,2
+Mohsin Khan,23,16,2,1,1
+Mukesh Choudhary,6,6,1,0,1
+Murugan Ashwin,12,14,1,1,3
+Mustafizur Rahman,3,5,0,0,0
+Narayan Jagadeesan,40,37,3,1,1
+Nathan Coulter-Nile,1,2,0,0,0
+Nathan Ellis,0,2,0,0,1
+Navdeep Saini,2,2,0,0,1
+Nicholas Pooran,306,212,16,21,8
+Nitish Rana,361,251,29,22,13
+Obed McCoy,8,5,0,1,1
+Odean Smith,51,44,1,5,3
+Pat Cummins,63,24,5,6,4
+Prabhsimran Singh,14,11,2,0,1
+Pradeep Sangwan,2,5,0,0,1
+Prasidh Krishna,6,12,0,0,1
+Prerak Mankad,4,1,1,0,0
+Prithvi Shaw,283,185,37,10,10
+Priyam Garg,46,33,4,2,2
+Quinton de Kock,508,341,47,23,14
+Rahul Chahar,77,68,7,4,6
+Rahul Tewatia,217,147,22,9,7
+Rahul Tripathi,413,261,40,20,11
+Raj Bawa,11,14,1,0,2
+Rajat Patidar,333,218,27,18,6
+Ramandeep Singh,45,40,3,1,2
+Rashid Khan,91,44,3,9,4
+Rasikh Salam,7,6,1,0,1
+Rassie van der Dussen,22,24,2,0,2
+Ravi Bishnoi,0,1,0,0,0
+Ravichandran Ashwin,191,135,14,9,7
+Ravindra Jadeja,116,98,6,5,6
+Riley Meredith,0,1,0,0,0
+Rinku Singh,174,117,17,7,5
+Ripal Patel,6,3,0,1,1
+Rishabh Pant,340,224,35,16,11
+Rishi Dhawan,37,40,4,2,2
+Riyan Parag,183,132,11,10,11
+Robin Uthappa,230,171,19,14,11
+Rohit Sharma,268,223,28,13,14
+Romario Shepherd,58,41,2,5,2
+Rovman Powell,250,167,10,22,10
+Ruturaj Gaikwad,368,291,33,14,14
+Sai Sudharsan,145,114,14,3,4
+Sam Billings,169,138,9,10,7
+Sanjay Yadav,0,2,0,0,1
+Sanju Samson,458,312,43,26,16
+Sarfaraz Khan,91,67,9,2,3
+Sean Abbott,7,5,0,1,1
+Shahbaz Ahmed,219,181,14,9,8
+Shardul Thakur,120,87,7,7,8
+Shashank Singh,69,47,5,4,4
+Sheldon Jackson,23,26,0,1,4
+Sherfane Rutherford,33,50,1,1,2
+Shikhar Dhawan,460,375,47,12,12
+Shimron Hetmyer,314,204,21,21,7
+Shivam Dube,289,185,22,16,10
+Shivam Mavi,3,7,0,0,2
+Shreyas Gopal,9,7,2,0,0
+Shreyas Iyer,401,298,41,11,13
+Shubman Gill,483,365,51,11,14
+Simarjeet Singh,7,8,0,0,1
+Srikar Bharat,8,7,2,0,2
+Sunil Narine,71,40,6,6,8
+Suryakumar Yadav,303,208,23,16,7
+Suyash Prabhudessai,67,59,7,2,5
+Tilak Varma,397,303,29,16,11
+Tim David,186,86,12,16,5
+Tim Seifert,24,19,4,0,2
+Tim Southee,2,12,0,0,4
+Trent Boult,40,29,2,1,2
+Tristan Stubbs,2,4,0,0,2
+Tymal Mills,0,3,0,0,1
+Umesh Yadav,55,40,4,4,4
+Umran Malik,4,8,0,0,1
+Vaibhav Arora,5,13,0,0,2
+Varun Chakravarthy,12,18,2,0,0
+Venkatesh Iyer,182,169,17,7,11
+Vijay Shankar,19,35,1,0,4
+Virat Kohli,341,294,32,8,15
+Wanindu Hasaranga de Silva,38,43,4,1,7
+Washington Sundar,101,69,9,3,7
+Wriddhiman Saha,317,259,40,7,10
+Yash Dayal,0,1,0,0,1
+Yashasvi Jaiswal,258,194,28,10,10
+Yuzvendra Chahal,5,8,0,0,1

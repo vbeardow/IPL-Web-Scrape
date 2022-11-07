@@ -91,7 +91,8 @@ def rename_cols(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def clean_batsman_names(df: pd.DataFrame) -> pd.DataFrame:
-    df["Batsman"] = df["Batsman"].str.strip("(c) |†")
+    df["Batsman"] = df["Batsman"].str.replace("\\xa0", " ")
+    df["Batsman"] = df["Batsman"].str.strip("(c) |†|")
     return df
 
 
@@ -139,6 +140,7 @@ def groupby_player(df: pd.DataFrame) -> pd.DataFrame:
         .sum()
         .reset_index()
     )
+    df = update_types(df)
 
     return df
 
