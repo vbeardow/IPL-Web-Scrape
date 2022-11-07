@@ -50,6 +50,21 @@ def drop_unnamed_cols(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def drop_named_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Drop column with column names 'M' and 'SR
+
+    Args:
+        df (pd.DataFrame): pandas dataframe to perform operation on
+
+    Returns:
+        pd.DataFrame: pandas dataframe without columns 'M' and 'SR
+    """
+    df.drop(columns="M", inplace=True)
+    df.drop(columns="SR", inplace=True)
+
+    return df
+
+
 def rename_cols(df: pd.DataFrame) -> pd.DataFrame:
     """Rename columns in dataframe to those specified within dictionary
 
@@ -66,7 +81,6 @@ def rename_cols(df: pd.DataFrame) -> pd.DataFrame:
             "Unnamed: 1": "Status",
             "R": "Runs",
             "B": "Balls",
-            "M": "Maidens",
             "4s": "Fours",
             "6s": "Sixes",
         },
@@ -90,6 +104,21 @@ def out_column(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def update_types(df: pd.DataFrame) -> pd.DataFrame:
+    """Update data types of columns
+
+    Args:
+        df (pd.DataFrame): pandas dataframe to perform operation on
+
+    Returns:
+        pd.DataFrame: pandas dataframe with updated datatypes
+    """
+    df = df.astype(
+        {"Runs": "int64", "Balls": "int64", "Fours": "int64", "Sixes": "int64"}
+    )
+    return df
+
+
 def groupby_player(df: pd.DataFrame) -> pd.DataFrame:
     """Group data by Batsman
 
@@ -99,9 +128,10 @@ def groupby_player(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         pd.DataFrame: grouped pandas dataframe
     """
+
     df = (
         df.groupby("Batsman")[["Runs", "Balls", "Fours", "Sixes", "Out"]]
-        .count()
+        .sum()
         .reset_index()
     )
 
@@ -120,8 +150,10 @@ def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
     df = rename_cols(df)
     df = drop_unnamed_cols(df)
+    df = drop_named_columns(df)
     df = drop_null_rows(df)
     df = drop_named_rows(df)
     df = out_column(df)
+    df = update_types(df)
 
     return df
